@@ -1,44 +1,115 @@
 body {
-  background: #f0f0f0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
 }
-
 .container {
-  max-width: 1280px;
+  max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.flex-between {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  column-gap: 1rem;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .flex {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  column-gap: 1rem;
 }
 
-nav {
+.gap-normal {
+  gap: 0.5rem;
+}
+.gap-wide {
+  gap: 0.75rem;
+}
+.gap-wider {
+  gap: 1rem;
+}
+
+.shadow-normal {
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
-.h-screen {
-  min-height: 100vh;
+.text-green {
+  color: #10b981;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+
+ul > li {
+  list-style-type: none;
 }
 
 a {
-  color: black;
   text-decoration: none;
+  color: inherit;
+  font-weight: 500;
 }
 
 a:hover {
   font-weight: bold;
+}
+
+section#home {
+  position: relative;
+  z-index: 1;
+}
+
+section#home svg {
+  position: absolute;
+  top: 0;
+}
+
+section#home div#hero {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+}
+section#home div#hero p {
+  text-align: center;
+}
+
+.text-4xl {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 600;
+}
+.text-3xl {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 600;
+}
+.text-2xl {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+button.primary {
+  padding: 12px 36px 12px 36px;
+  font-size: 16px;
+  text-transform: capitalize;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #10b981;
+  font-weight: 500;
+  color: #10b981;
+}
+
+button.secondary {
+  padding: 12px 36px 12px 36px;
+  font-size: 16px;
+  text-transform: capitalize;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid white;
+  font-weight: 500;
+  color: white;
+  background-color: #10b981;
 }
